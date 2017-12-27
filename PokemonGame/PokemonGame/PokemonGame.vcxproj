@@ -147,11 +147,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="ConfigLoader.h" />
     <ClInclude Include="Pokemon.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ConfigLoader.cpp" />
     <ClCompile Include="Pokemon.cpp" />
     <ClCompile Include="PokemonGame.cpp" />
     <ClCompile Include="stdafx.cpp">

@@ -15,30 +15,34 @@ ConfigLoader::ConfigLoader()
 
 ConfigLoader::ConfigLoader(string fileName)
 {
-	// read a JSON file
-	ifstream i(fileName);
-
-	bool needsDebug = true;
-	if(needsDebug)
+	if(isFileValid(fileName))
 	{
-		debugFileInput(fileName);
-	}
+		// read a JSON file
+		ifstream theFile(fileName);
+		json jsonData;
+		theFile >> jsonData;
+		cout << jsonData.dump(4) << endl;
+
+		/*
+		for (json::iterator it = jsonData.begin(); it != jsonData.end(); ++it) {
+			std::cout << it.key() << " : " << it.value() << "\n";
+		}
+		*/
 	
-
-	json j;
-	i >> j;
-
-	cout << j.dump(4) << endl;
+		string firstName = jsonData["1"]["name"];
+		cout << firstName << endl;
+	}
 }
 
-void ConfigLoader::debugFileInput(string fileName)
+bool ConfigLoader::isFileValid(string fileName)
 {
-ifstream i(fileName);
-
-cout << "We got this as the Text" << endl;
-cout << "-----------------------" << endl;
-cout << i.rdbuf() << endl;
-cout << "-----------------------" << endl;
+	ifstream theFile(fileName);
+	if (!theFile.is_open())
+	{
+		cout << "This file wasn't found: " << fileName << endl;
+		return false;
+	}
+	return true;
 }
 
 

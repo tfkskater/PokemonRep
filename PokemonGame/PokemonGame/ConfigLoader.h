@@ -5,10 +5,15 @@ using namespace std;
 class ConfigLoader
 {
 private:
-	void debugFileInput(string fileName);
+	bool isFileValid(string fileName);
 public:
+
+	//Constructors
 	ConfigLoader();
 	ConfigLoader(string fileName);
+
+
+
 	~ConfigLoader();
 };
 

@@ -2,20 +2,24 @@
 #include "Pokemon.h"
 using namespace std;
 #include <string>
+#include <iostream>
+
+const string Pokemon::UNKNOWN = "unknown";
+const int Pokemon::NO_AMOUNT = -1;
+
 
 Pokemon::Pokemon()
+	:name(UNKNOWN), attack(NO_AMOUNT), defense(NO_AMOUNT), evolveLevel(NO_AMOUNT), evolveTo(NO_AMOUNT), type(UNKNOWN), moves(NULL), curve(NO_AMOUNT), levels(NULL), probability(NO_AMOUNT)
 {
-	name = "unknown";
-	attack = 5;
-	defense = 5;
-	evolveLevel = 10;
-	evolveTo = 15;
-	type = "unknown";
-	moves = NULL;
-	curve = 5;
-	levels = NULL;
-	probability = 4;
+	
 }
+
+Pokemon::Pokemon(string n, int a, int d, int eL, int eT, string t, string * m, int c, int * l, int p)
+	: name(n), attack(a), defense(d), evolveLevel(eL), evolveTo(eT), type(t), moves(m), curve(c), levels(l), probability(p)
+{
+
+}
+
 
 string Pokemon::getName()
 {
@@ -25,4 +29,5 @@ string Pokemon::getName()
 
 Pokemon::~Pokemon()
 {
+	
 }

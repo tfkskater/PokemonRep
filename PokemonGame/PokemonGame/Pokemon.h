@@ -4,6 +4,11 @@ using namespace std;
 class Pokemon
 {
 private:
+	//defining the defualts
+	static const string UNKNOWN;
+	static const int NO_AMOUNT;
+
+
 
 	string name;
 	int attack;
@@ -18,6 +23,7 @@ private:
 
 public:
 	Pokemon();
+	Pokemon(string n, int a, int d, int eL, int eT, string t, string* m, int c, int* l, int p);
 	string getName();
 	~Pokemon();
 };

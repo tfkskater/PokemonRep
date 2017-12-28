@@ -1,13 +1,13 @@
 #include "stdafx.h"
 #include "ConfigLoader.h"
 
-#include "json.hpp"
+#//include "json.hpp"
 using namespace std;
 #include <iostream>
 #include <fstream>
 #include <string>
 // for convenience
-using json = nlohmann::json;
+//using json = nlohmann::json;
 
 ConfigLoader::ConfigLoader()
 {
@@ -19,19 +19,17 @@ ConfigLoader::ConfigLoader(string fileName)
 	{
 		// read a JSON file
 		ifstream theFile(fileName);
-		json jsonData;
 		theFile >> jsonData;
-		cout << jsonData.dump(4) << endl;
-
-		/*
-		for (json::iterator it = jsonData.begin(); it != jsonData.end(); ++it) {
-			std::cout << it.key() << " : " << it.value() << "\n";
-		}
-		*/
+		//cout << jsonData.dump(4) << endl;
 	
-		string firstName = jsonData["1"]["name"];
-		cout << firstName << endl;
+		//string firstName = jsonData["1"]["name"];
+		//cout << firstName << endl;
 	}
+}
+
+json ConfigLoader::getConfig()
+{
+	return jsonData;
 }
 
 bool ConfigLoader::isFileValid(string fileName)

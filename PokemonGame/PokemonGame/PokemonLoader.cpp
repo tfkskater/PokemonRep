@@ -16,15 +16,16 @@ PokemonLoader::PokemonLoader()
 	ConfigLoader thePokemonConfigLoader(loadThisFileName);
 	json thePokeonConfig = thePokemonConfigLoader.getConfig();
 
-	Pokemon* poke;
+	//makeing a pokemon array of size 151
+	Pokemon* pokemonList[151];
 	string pokemonKey;
 	json pokemonJsonData;
 	for (json::iterator it = thePokeonConfig.begin(); it != thePokeonConfig.end(); ++it)
 	{
 		pokemonKey = it.key();
 		pokemonJsonData = it.value();
-
-		poke = new Pokemon(
+		//we are subtracting 1 from the key and putting each pokemon into the spot in the array
+		pokemonList[stoi(pokemonKey) - 1] = new Pokemon(
 			jsonUtil.getStringFromJson(pokemonJsonData, "name"),
 			jsonUtil.getIntFromJson(pokemonJsonData, "attack"),
 			jsonUtil.getIntFromJson(pokemonJsonData, "defense"),
@@ -36,9 +37,10 @@ PokemonLoader::PokemonLoader()
 			new int[1],
 			jsonUtil.getIntFromJson(pokemonJsonData, "probability")
 		);
-		cout << poke->getName() << endl;
 	}
+	cout << "done loading pokemon from config" << endl;
 }
+
 
 PokemonLoader::~PokemonLoader()
 {

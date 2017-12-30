@@ -8,16 +8,11 @@ JsonUtility::JsonUtility()
 
 string JsonUtility::getStringFromJson(json data, string key, string defaultValue)
 {
-	string value;
 	if (!data[key].is_null())
 	{
-		value = data[key].get<string>();
+		return data[key].get<string>();
 	}
-	else
-	{
-		value = defaultValue;
-	}
-	return value;
+	return defaultValue;
 }
 
 int JsonUtility::getIntFromJson(json data, string key)
@@ -26,10 +21,7 @@ int JsonUtility::getIntFromJson(json data, string key)
 	{
 		return data[key].get<int>();
 	}
-	else
-	{
-		return -1;
-	}
+	return -1;
 }
 
 double JsonUtility::getDoubleFromJson(json data, string key)
@@ -38,10 +30,7 @@ double JsonUtility::getDoubleFromJson(json data, string key)
 	{
 		return data[key].get<double>();
 	}
-	else
-	{
-		return -1;
-	}
+	return -1;
 }
 
 

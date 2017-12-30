@@ -16,6 +16,9 @@
     <Filter Include="Source Files\Utilities">
       <UniqueIdentifier>{f992430f-0e55-45bd-992d-3815fcaec1f8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\StartUp">
+      <UniqueIdentifier>{a9896642-c620-40dd-a587-700994cabfee}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -30,6 +33,15 @@
     <ClInclude Include="ConfigLoader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="StartUpManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PokemonLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonUtility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -42,6 +54,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ConfigLoader.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="StartUpManager.cpp">
+      <Filter>Source Files\StartUp</Filter>
+    </ClCompile>
+    <ClCompile Include="PokemonLoader.cpp">
+      <Filter>Source Files\StartUp</Filter>
+    </ClCompile>
+    <ClCompile Include="JsonUtility.cpp">
       <Filter>Source Files\Utilities</Filter>
     </ClCompile>
   </ItemGroup>

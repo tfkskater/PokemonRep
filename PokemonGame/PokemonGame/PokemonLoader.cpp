@@ -5,8 +5,21 @@
 #include <iostream>
 #include "Pokemon.h"
 #include "ConfigLoader.h"
+#include <map>
 using namespace std;
 using json = nlohmann::json;
+
+const string PokemonLoader::UNKNOWN_AMOUNT = "-1";
+const string PokemonLoader::NAME = "name";
+const string PokemonLoader::ATTACK = "attack";
+const string PokemonLoader::DEFENSE = "defense";
+const string PokemonLoader::EVOLVE_LEVEL = "evolveLevel";
+const string PokemonLoader::EVOLVE_TO = "evolveTo";
+const string PokemonLoader::TYPE = "type";
+const string PokemonLoader::MOVES = "moves";
+const string PokemonLoader::CURVE = "curve";
+const string PokemonLoader::LEVELS = "levels";
+const string PokemonLoader::PROBABILITY = "probability";
 
 PokemonLoader::PokemonLoader()
 {
@@ -16,26 +29,24 @@ PokemonLoader::PokemonLoader()
 	ConfigLoader thePokemonConfigLoader(loadThisFileName);
 	json thePokeonConfig = thePokemonConfigLoader.getConfig();
 
-	//makeing a pokemon array of size 151
-	Pokemon* pokemonList[151];
+	map<int, Pokemon*> pokemonList;
 	string pokemonKey;
 	json pokemonJsonData;
 	for (json::iterator it = thePokeonConfig.begin(); it != thePokeonConfig.end(); ++it)
 	{
 		pokemonKey = it.key();
 		pokemonJsonData = it.value();
-		//we are subtracting 1 from the key and putting each pokemon into the spot in the array
-		pokemonList[stoi(pokemonKey) - 1] = new Pokemon(
-			jsonUtil.getStringFromJson(pokemonJsonData, "name"),
-			jsonUtil.getIntFromJson(pokemonJsonData, "attack"),
-			jsonUtil.getIntFromJson(pokemonJsonData, "defense"),
-			jsonUtil.getIntFromJson(pokemonJsonData, "evolveLevel"),
-			stoi(jsonUtil.getStringFromJson(pokemonJsonData, "evolveTo", "-1")),
-			jsonUtil.getStringFromJson(pokemonJsonData, "type"),
-			jsonUtil.getStringVectorFromJson(pokemonJsonData, "moves"),
-			jsonUtil.getDoubleFromJson(pokemonJsonData, "curve"),
-			jsonUtil.getIntVectorFromJson(pokemonJsonData, "levels"),
-			jsonUtil.getIntFromJson(pokemonJsonData, "probability")
+		pokemonList[stoi(pokemonKey)] = new Pokemon(
+			jsonUtil.getStringFromJson(pokemonJsonData, NAME),
+			jsonUtil.getIntFromJson(pokemonJsonData, ATTACK),
+			jsonUtil.getIntFromJson(pokemonJsonData, DEFENSE),
+			jsonUtil.getIntFromJson(pokemonJsonData, EVOLVE_LEVEL),
+			stoi(jsonUtil.getStringFromJson(pokemonJsonData, EVOLVE_TO, UNKNOWN_AMOUNT)),
+			jsonUtil.getStringFromJson(pokemonJsonData, TYPE),
+			jsonUtil.getStringVectorFromJson(pokemonJsonData, MOVES),
+			jsonUtil.getDoubleFromJson(pokemonJsonData, CURVE),
+			jsonUtil.getIntVectorFromJson(pokemonJsonData, LEVELS),
+			jsonUtil.getIntFromJson(pokemonJsonData, PROBABILITY)
 		);
 	}
 	cout << "done loading pokemon from config" << endl;

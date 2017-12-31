@@ -20,10 +20,6 @@ ConfigLoader::ConfigLoader(string fileName)
 		// read a JSON file
 		ifstream theFile(fileName);
 		theFile >> jsonData;
-		//cout << jsonData.dump(4) << endl;
-	
-		//string firstName = jsonData["1"]["name"];
-		//cout << firstName << endl;
 	}
 }
 

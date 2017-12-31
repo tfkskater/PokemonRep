@@ -10,8 +10,6 @@ private:
 	static const string UNKNOWN;
 	static const int NO_AMOUNT;
 
-
-
 	string name;
 	int attack;
 	int defense;

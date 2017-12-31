@@ -32,9 +32,9 @@ PokemonLoader::PokemonLoader()
 			jsonUtil.getIntFromJson(pokemonJsonData, "evolveLevel"),
 			stoi(jsonUtil.getStringFromJson(pokemonJsonData, "evolveTo", "-1")),
 			jsonUtil.getStringFromJson(pokemonJsonData, "type"),
-			new string[1],
+			jsonUtil.getStringVectorFromJson(pokemonJsonData, "moves"),
 			jsonUtil.getDoubleFromJson(pokemonJsonData, "curve"),
-			new int[1],
+			jsonUtil.getIntVectorFromJson(pokemonJsonData, "levels"),
 			jsonUtil.getIntFromJson(pokemonJsonData, "probability")
 		);
 	}

@@ -30,9 +30,26 @@ double JsonUtility::getDoubleFromJson(json data, string key)
 	{
 		return data[key].get<double>();
 	}
-	return -1;
+	return -1.0;
 }
 
+vector<string> JsonUtility::getStringVectorFromJson(json data, string key)
+{
+	if (!data[key].is_null())
+	{
+		return data[key].get<std::vector<string>>();
+	}
+	return {"unknown"};
+}
+
+vector<int> JsonUtility::getIntVectorFromJson(json data, string key)
+{
+	if (!data[key].is_null())
+	{
+		return data[key].get<std::vector<int>>();
+	}
+	return {-1};
+}
 
 JsonUtility::~JsonUtility()
 {

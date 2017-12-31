@@ -14,7 +14,7 @@ Pokemon::Pokemon()
 	
 }
 
-Pokemon::Pokemon(string n, int a, int d, int eL, int eT, string t, string * m, int c, int * l, int p)
+Pokemon::Pokemon(string n, int a, int d, int eL, int eT, string t, vector<string> m, int c, vector<int> l, int p)
 	: name(n), attack(a), defense(d), evolveLevel(eL), evolveTo(eT), type(t), moves(m), curve(c), levels(l), probability(p)
 {
 

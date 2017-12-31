@@ -1,6 +1,8 @@
 #pragma once
 using namespace std;
 #include <string>
+#include <vector>
+
 class Pokemon
 {
 private:
@@ -16,14 +18,14 @@ private:
 	int evolveLevel;
 	int evolveTo;
 	string type;
-	string* moves;
+	vector<string> moves;
 	int curve;
-	int* levels;
+	vector<int> levels;
 	int probability;
 
 public:
 	Pokemon();
-	Pokemon(string n, int a, int d, int eL, int eT, string t, string* m, int c, int* l, int p);
+	Pokemon(string n, int a, int d, int eL, int eT, string t, vector<string> m, int c, vector<int> l, int p);
 	string getName();
 	~Pokemon();
 };

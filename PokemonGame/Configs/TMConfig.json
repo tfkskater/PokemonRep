@@ -1,0 +1,352 @@
+{
+	"TM01": {
+		"attackName": "Mega Punch",
+		"type": "Normal",
+		"damageAmount": "80",
+		"percentHit": "85",
+		"description": "Damages the target."
+	},
+	"TM02": {
+		"attackName": "Razor Wind",
+		"type": "Normal",
+		"damageAmount": "80",
+		"percentHit": "75",
+		"description": "The user prepares on turn one, becoming uncontrollable, and then attacks on turn two."
+	},
+	"TM03": {
+		"attackName": "Swords Dance",
+		"type": "Normal",
+		"damageAmount": "N/A",
+		"percentHit": "N/A",
+		"description": "Raises the user's Attack by 2 stages."
+	},
+	"TM04": {
+		"attackName": "Whirlwind",
+		"type": "Normal",
+		"damageAmount": "N/A",
+		"percentHit": "100",
+		"description": "Escapes from wild battles; fails automatically in trainer and link battles."
+	},
+	"TM05": {
+		"attackName": "Mega Kick",
+		"type": "Normal",
+		"damageAmount": "120",
+		"percentHit": "75",
+		"description": "Damages the target."
+	},
+	"TM06": {
+		"attackName": "Toxic",
+		"type": "Poison",
+		"damageAmount": "N/A",
+		"percentHit": "85",
+		"description": "The target is badly poisoned, with the damage caused by poison doubling after each turn. However, Toxic poisoning will revert to normal poisoning if the poisoned Pokemon is switched out or uses Haze. Damage caused by Leech Seed will also increase as Toxic damage increases."
+	},
+	"TM07": {
+		"attackName": "Horn Drill",
+		"type": "Normal",
+		"damageAmount": "KO",
+		"percentHit": "30",
+		"description": "The target faints; doesn't work on faster or higher-leveled Pokemon."
+	},
+	"TM08": {
+		"attackName": "Body Slam",
+		"type": "Normal",
+		"damageAmount": "85",
+		"percentHit": "100",
+		"description": "Has a ~30 chance to paralyze the target."
+	},
+	"TM09": {
+		"attackName": "Take Down",
+		"type": "Normal",
+		"damageAmount": "90",
+		"percentHit": "85",
+		"description": "The user receives 1/4 recoil damage."
+	},
+	"TM10": {
+		"attackName": "Double-edge",
+		"type": "Normal",
+		"damageAmount": "100",
+		"percentHit": "100",
+		"description": "The user receives 1/4 recoil damage."
+	},
+	"TM11": {
+		"attackName": "Bubblebeam",
+		"type": "Water",
+		"damageAmount": "65",
+		"percentHit": "100",
+		"description": "Has a ~10 chance to lower the target's Speed by 1 stage."
+	},
+	"TM12": {
+		"attackName": "Water Gun",
+		"type": "Water",
+		"damageAmount": "40",
+		"percentHit": "100",
+		"description": "Damages the target."
+	},
+	"TM13": {
+		"attackName": "Ice Beam",
+		"type": "Ice",
+		"damageAmount": "95",
+		"percentHit": "100",
+		"description": "Has a ~10 chance to freeze the target."
+	},
+	"TM14": {
+		"attackName": "Blizzard",
+		"type": "Ice",
+		"damageAmount": "120",
+		"percentHit": "90",
+		"description": "Has a ~10 chance to freeze the target."
+	},
+	"TM15": {
+		"attackName": "Hyper Beam",
+		"type": "Normal",
+		"damageAmount": "150",
+		"percentHit": "90",
+		"description": "In Stadium, the user becomes uncontrollable during its next turn. Otherwise, the user attacks on turn one but it doesn't recharge on turn two if it KOs the target, breaks its Substitute or misses entirely."
+	},
+	"TM16": {
+		"attackName": "Pay Day",
+		"type": "Normal",
+		"damageAmount": "40",
+		"percentHit": "100",
+		"description": "The player picks up extra money after in-game battles; the money received is equal to: [user's level * 2 * number of times Pay Day is used]. The player does not lose money if the opponent uses Pay Day but the player wins the battle."
+	},
+	"TM17": {
+		"attackName": "Submission",
+		"type": "Fighting",
+		"damageAmount": "80",
+		"percentHit": "80",
+		"description": "The user receives 1/4 recoil damage."
+	},
+	"TM18": {
+		"attackName": "Counter",
+		"type": "Fighting",
+		"damageAmount": "Var Dmg",
+		"percentHit": "100",
+		"description": "Almost always goes last; if an opponent strikes with a Normal- or Fighting-type attack before the user's turn, the user retaliates for twice the damage it had endured."
+	},
+	"TM19": {
+		"attackName": "Seismic Toss",
+		"type": "Fighting",
+		"damageAmount": "Var Dmg",
+		"percentHit": "100",
+		"description": "Does damage equal to user's level. Hits Ghost-type Pokemon."
+	},
+	"TM20": {
+		"attackName": "Rage",
+		"type": "Normal",
+		"damageAmount": "20",
+		"percentHit": "100",
+		"description": "The user attacks uncontrollably until it faints or its target faints. During this time, the user's Attack increases by 1 stage for each time it is hit by the target. If this move misses, the user continues to attack but has only a 1/256 chance to land a hit."
+	},
+	"TM21": {
+		"attackName": "Mega Drain",
+		"type": "Grass",
+		"damageAmount": "40",
+		"percentHit": "100",
+		"description": "Restores the user's HP by 1/2 of the damage inflicted on the target."
+	},
+	"TM22": {
+		"attackName": "Solarbeam",
+		"type": "Grass",
+		"damageAmount": "120",
+		"percentHit": "100",
+		"description": "The user prepares on turn one, becoming uncontrollable, and then attacks on turn two."
+	},
+	"TM23": {
+		"attackName": "Dragon Rage",
+		"type": "Dragon",
+		"damageAmount": "Set",
+		"percentHit": "100",
+		"description": "Always deals 40 points of damage."
+	},
+	"TM24": {
+		"attackName": "Thunderbolt",
+		"type": "Electric",
+		"damageAmount": "95",
+		"percentHit": "100",
+		"description": "Has a ~10 chance to paralyze the target."
+	},
+	"TM25": {
+		"attackName": "Thunder",
+		"type": "Electric",
+		"damageAmount": "120",
+		"percentHit": "70",
+		"description": "Has a ~10 chance to paralyze the target."
+	},
+	"TM26": {
+		"attackName": "Earthquake",
+		"type": "Ground",
+		"damageAmount": "100",
+		"percentHit": "100",
+		"description": "Damages the target."
+	},
+	"TM27": {
+		"attackName": "Fissure",
+		"type": "Ground",
+		"damageAmount": "KO",
+		"percentHit": "30",
+		"description": "The target faints; doesn't work on faster or higher-leveled Pokemon."
+	},
+	"TM28": {
+		"attackName": "Dig",
+		"type": "Ground",
+		"damageAmount": "100",
+		"percentHit": "100",
+		"description": "On the first turn, the user digs underground, becoming uncontrollable, and evades all attacks. Swift may still hit a Pokemon underground. On the second turn, the user attacks."
+	},
+	"TM29": {
+		"attackName": "Psychic",
+		"type": "Psychic",
+		"damageAmount": "90",
+		"percentHit": "100",
+		"description": "Has a ~30 chance to lower the target's Special by 1 stage."
+	},
+	"TM30": {
+		"attackName": "Teleport",
+		"type": "Psychic",
+		"damageAmount": "N/A",
+		"percentHit": "N/A",
+		"description": "Escapes from wild battles; fails automatically in trainer and link battles."
+	},
+	"TM31": {
+		"attackName": "Mimic",
+		"type": "Normal",
+		"damageAmount": "N/A",
+		"percentHit": "100",
+		"description": "This move is temporarily replaced by one of the target's moves; after one PP is subtracted to use this move, the replacement move will retain Mimic's remaining PP. The user can select any of the target's moves to copy until the end of the battle or until the user switches out. There are no move restrictions on Mimic other than itself and Struggle. However, in a link battle, Mimic will copy one of the target's attacks randomly."
+	},
+	"TM32": {
+		"attackName": "Double Team",
+		"type": "Normal",
+		"damageAmount": "N/A",
+		"percentHit": "N/A",
+		"description": "Raises the user's Evasion by 1 stage."
+	},
+	"TM33": {
+		"attackName": "Reflect",
+		"type": "Psychic",
+		"damageAmount": "N/A",
+		"percentHit": "N/A",
+		"description": "The user receives 1/2 damage from Physical attacks until it switches out or either Pokemon uses Haze."
+	},
+	"TM34": {
+		"attackName": "Bide",
+		"type": "Normal",
+		"damageAmount": "Var Dmg",
+		"percentHit": "100",
+		"description": "The user absorbs all damage for 2-3 turns and then inflicts twice the absorbed damage on its target. This move ignores the target's type but still cannot hit Ghost-type Pokemon."
+	},
+	"TM35": {
+		"attackName": "Metronome",
+		"type": "Normal",
+		"damageAmount": "N/A",
+		"percentHit": "N/A",
+		"description": "The user performs a randomly selected move; almost any move in the game could be picked. Metronome cannot generate itself, Struggle or any move that the user already knows."
+	},
+	"TM36": {
+		"attackName": "Selfdestruct",
+		"type": "Normal",
+		"damageAmount": "130",
+		"percentHit": "100",
+		"description": "The Defense stat of other Pokemon is halved against this attack, essentially doubling the move's base power; causes the user to faint."
+	},
+	"TM37": {
+		"attackName": "Egg Bomb",
+		"type": "Normal",
+		"damageAmount": "100",
+		"percentHit": "75",
+		"description": "Damages the target."
+	},
+	"TM38": {
+		"attackName": "Fire Blast",
+		"type": "Fire",
+		"damageAmount": "120",
+		"percentHit": "85",
+		"description": "Has a ~30 chance to burn the target."
+	},
+	"TM39": {
+		"attackName": "Swift",
+		"type": "Normal",
+		"damageAmount": "60",
+		"percentHit": "100",
+		"description": "Ignores Evasion and Accuracy modifiers and will hit Pokemon even if they are in the middle of Fly or Dig. Has a 1-in-256 chance of missing."
+	},
+	"TM40": {
+		"attackName": "Skull Bash",
+		"type": "Normal",
+		"damageAmount": "100",
+		"percentHit": "100",
+		"description": "The user prepares on turn one, becoming uncontrollable, and then attacks on turn two."
+	},
+	"TM41": {
+		"attackName": "Softboiled",
+		"type": "Normal",
+		"damageAmount": "N/A",
+		"percentHit": "N/A",
+		"description": "Restores 1/2 of the user's max HP. However, this move fails if the user's current HP is 511 or 255 HP below its value at full health."
+	},
+	"TM42": {
+		"attackName": "Dream Eater",
+		"type": "Psychic",
+		"damageAmount": "100",
+		"percentHit": "100",
+		"description": "Restores the user's HP by 1/2 of the damage inflicted on the target but only works on a sleeping target."
+	},
+	"TM43": {
+		"attackName": "Sky Attack",
+		"type": "Flying",
+		"damageAmount": "140",
+		"percentHit": "90",
+		"description": "The user prepares on turn one, becoming uncontrollable, and then attacks on turn two."
+	},
+	"TM44": {
+		"attackName": "Rest",
+		"type": "Psychic",
+		"damageAmount": "N/A",
+		"percentHit": "N/A",
+		"description": "The user is cured of status effects (and confusion), and recovers full HP, but falls asleep for 2 turns (and then uses a third turn to wake up). However, this move fails if the user's current HP is 511 or 255 HP below its value at full health."
+	},
+	"TM45": {
+		"attackName": "Thunder Wave",
+		"type": "Electric",
+		"damageAmount": "N/A",
+		"percentHit": "100",
+		"description": "Paralyzes the target."
+	},
+	"TM46": {
+		"attackName": "Psywave",
+		"type": "Psychic",
+		"damageAmount": "Var Dmg",
+		"percentHit": "80",
+		"description": "Randomly inflicts set damage between a minimum of 1 HP and a maximum of [1.5x the user's level] HP."
+	},
+	"TM47": {
+		"attackName": "Explosion",
+		"type": "Normal",
+		"damageAmount": "170",
+		"percentHit": "100",
+		"description": "The Defense stat of other Pokemon is halved against this attack, essentially doubling the move's base power; causes the user to faint."
+	},
+	"TM48": {
+		"attackName": "Rock Slide",
+		"type": "Rock",
+		"damageAmount": "75",
+		"percentHit": "90",
+		"description": "Damages the target."
+	},
+	"TM49": {
+		"attackName": "Tri Attack",
+		"type": "Normal",
+		"damageAmount": "80",
+		"percentHit": "100",
+		"description": "Damages the target."
+	},
+	"TM50": {
+		"attackName": "Substitute",
+		"type": "Normal",
+		"damageAmount": "N/A",
+		"percentHit": "N/A",
+		"description": "The user takes one-fourth of its maximum HP to create a substitute; this move fails if the user does not have enough HP for this. Until the substitute is broken, it receives damage from all attacks made by other Pokemon. In-game, the user can still be inflicted with status effects and stat modifiers from other Pokemon, but this is fixed in Pokemon Stadium. If a Substitute breaks from a hit during a multistrike move such as Fury Attack, the user takes damage from the remaining strikes."
+	}
+}

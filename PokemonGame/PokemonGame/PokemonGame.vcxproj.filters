@@ -42,6 +42,21 @@
     <ClInclude Include="JsonUtility.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="TM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TMLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Trainer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Pokedex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PokedexEntry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -64,6 +79,21 @@
     </ClCompile>
     <ClCompile Include="JsonUtility.cpp">
       <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="TM.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="TMLoader.cpp">
+      <Filter>Source Files\StartUp</Filter>
+    </ClCompile>
+    <ClCompile Include="Trainer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Pokedex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PokedexEntry.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

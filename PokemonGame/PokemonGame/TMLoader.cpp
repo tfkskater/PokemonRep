@@ -8,7 +8,6 @@
 #include <map>
 #include "TMLoader.h"
 
-const string TMLoader::UNKNOWN_AMOUNT = "-1";
 const string TMLoader::ATTACK_NAME = "attackName";
 const string TMLoader::TYPE = "type";
 const string TMLoader::DAMAGE_AMOUNT = "damageAmount";

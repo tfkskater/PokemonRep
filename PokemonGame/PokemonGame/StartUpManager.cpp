@@ -3,6 +3,7 @@
 #include "PokemonLoader.h"
 #include "TMLoader.h"
 #include "Trainer.h"
+#include "ItemLoader.h"
 
 StartUpManager::StartUpManager()
 {
@@ -14,6 +15,7 @@ void StartUpManager::startRequiredManagers()
 	PokemonLoader pokeLoader;//loading the pokemon from the config into memory.
 	//SoundLoader
 	TMLoader tmLoader; 
+	ItemLoader itemLoader;
 	Trainer brock("Brock", 250);
 }
 

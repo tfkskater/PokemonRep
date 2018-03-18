@@ -4,23 +4,19 @@ using namespace std;
 #include <iostream>
 #include "TM.h"
 
+
 const string TM::UNKNOWN = "unknown";
 const int TM::NO_AMOUNT = -1;
 
 TM::TM()
-	:attackName(UNKNOWN), type(UNKNOWN), damageAmount(UNKNOWN), percentHit(UNKNOWN), description(UNKNOWN)
+	:type(UNKNOWN), damageAmount(UNKNOWN), percentHit(UNKNOWN), description(UNKNOWN)
 {
-
+	name = UNKNOWN;
 }
-TM::TM(string aN, string t, string dA, string pH, string d)
-	: attackName(aN), type(t), damageAmount(dA), percentHit(pH), description(d)
+TM::TM(string n, string t, string dA, string pH, string d)
+	:type(t), damageAmount(dA), percentHit(pH), description(d)
 {
-
-}
-
-string TM::getAttackName()
-{
-	return attackName;
+	name = n;
 }
 
 TM::~TM()

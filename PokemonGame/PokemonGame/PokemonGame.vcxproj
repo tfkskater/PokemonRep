@@ -148,6 +148,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="ConfigLoader.h" />
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="ItemLoader.h" />
     <ClInclude Include="JsonUtility.h" />
     <ClInclude Include="Pokedex.h" />
     <ClInclude Include="PokedexEntry.h" />
@@ -162,6 +164,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ConfigLoader.cpp" />
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="ItemLoader.cpp" />
     <ClCompile Include="JsonUtility.cpp" />
     <ClCompile Include="Pokedex.cpp" />
     <ClCompile Include="PokedexEntry.cpp" />

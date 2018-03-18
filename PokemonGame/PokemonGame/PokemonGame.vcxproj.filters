@@ -19,6 +19,9 @@
     <Filter Include="Source Files\StartUp">
       <UniqueIdentifier>{a9896642-c620-40dd-a587-700994cabfee}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\GameItems">
+      <UniqueIdentifier>{9de3017a-d2c5-4989-867e-a3081dc883bb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -57,6 +60,12 @@
     <ClInclude Include="PokedexEntry.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -80,12 +89,6 @@
     <ClCompile Include="JsonUtility.cpp">
       <Filter>Source Files\Utilities</Filter>
     </ClCompile>
-    <ClCompile Include="TM.cpp">
-      <Filter>Source Files\Utilities</Filter>
-    </ClCompile>
-    <ClCompile Include="TMLoader.cpp">
-      <Filter>Source Files\StartUp</Filter>
-    </ClCompile>
     <ClCompile Include="Trainer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -94,6 +97,18 @@
     </ClCompile>
     <ClCompile Include="PokedexEntry.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TMLoader.cpp">
+      <Filter>Source Files\StartUp</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemLoader.cpp">
+      <Filter>Source Files\StartUp</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>Source Files\GameItems</Filter>
+    </ClCompile>
+    <ClCompile Include="TM.cpp">
+      <Filter>Source Files\GameItems</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,0 +1,8 @@
+BoulderBadge
+CascadeBadge
+ThunderBadge
+RainbowBadge
+SoulBadge
+MarshBadge
+VolcanoBadge
+EarthBadge

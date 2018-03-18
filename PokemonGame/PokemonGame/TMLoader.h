@@ -11,7 +11,6 @@ using namespace std;
 class TMLoader
 {
 private:
-	static const string UNKNOWN_AMOUNT;
 
 	//defining JSON keys
 	static const string ATTACK_NAME;
